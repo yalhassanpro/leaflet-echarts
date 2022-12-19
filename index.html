@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaflet Tutorial</title>
+
+    <!-- Call Echarts files-->
+    <script src="echarts.min.js"></script>
+
+    <!--**Leaflet css**-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+
+    <style>
+      #myMap {
+        width: 50%;
+        height: 50vh;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .coordinate {
+        position: absolute;
+        bottom: 10px;
+        right: 50%;
+      }
+
+      #barChart {
+        height: 50vh;
+        width: 50%;
+        position: absolute;
+        right: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="barChart"></div>
+
+    <div id="myMap">
+      <div class="leaflet-control coordinate"></div>
+    </div>
+  </body>
+</html>
+
+<!--**Leaflet js**-->
+<script
+  src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+  integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+  crossorigin=""
+></script>
+
+<!-- Call the data for leaflet-->
+<script src="data/route.js"></script>
+<script src="data/stops.js"></script>
+
+<!-- Call the main JS Script for leaflet-->
+<script src="index.js"></script>
+
+<!-- Call chart files-->
+<script src="app.js"></script>
